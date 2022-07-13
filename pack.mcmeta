@@ -1,6 +1,6 @@
 {
     "pack": {
         "pack_format": 10,
-        "description": [ {"text":"3rd Life","color":"gold"}, {"text":"\nPack by megabyte6"} ]
+        "description": [ {"text":"3rd Life"}, {"text":"\nPack by megabyte6","color":"gold"} ]
     }
 }
