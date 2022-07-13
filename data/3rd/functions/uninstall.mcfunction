@@ -1,0 +1,1 @@
+schedule clear 3rd:tick
