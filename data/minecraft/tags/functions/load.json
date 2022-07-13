@@ -1,6 +1,7 @@
 {
     "values": [
         "3rd:load",
-        "3rd:tick"
+        "3rd:tick",
+        "3rd:choose_boogeyman"
     ]
 }
