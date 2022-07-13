@@ -6,6 +6,7 @@ execute unless data storage 3rd init run data modify storage 3rd init set value 
 # Add scoreboards
 scoreboard objectives add 3rd_death deathCount
 
+# Set up teams
 team add 3rd_first
 team modify 3rd_first color green
 team add 3rd_second
