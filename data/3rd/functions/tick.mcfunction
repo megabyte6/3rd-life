@@ -5,10 +5,10 @@ schedule function 3rd:tick 1t
 execute as @a unless score @s 3rd_death matches -2147483648..2147483647 run scoreboard players set @s 3rd_death 0
 
 # Put each player in a team depending on their deaths
-team join 3rd_first @a[team=!3rd_first, scores={3rd_death=0}]
-team join 3rd_second @a[team=!3rd_second, scores={3rd_death=1}]
-team join 3rd_third @a[team=!3rd_third, scores={3rd_death=2}]
+team join 3rd_first @a[scores={3rd_death=0}, team=!3rd_first]
+team join 3rd_second @a[scores={3rd_death=1}, team=!3rd_second]
+team join 3rd_third @a[scores={3rd_death=2}, team=!3rd_third]
 
 # Put player in spectator after their third death
-gamemode spectator @a[team=!3rd_dead, scores={3rd_death=3}]
-team join 3rd_dead @a[team=!3rd_dead, scores={3rd_death=3}]
+gamemode spectator @a[scores={3rd_death=3}, team=!3rd_dead]
+team join 3rd_dead @a[scores={3rd_death=3}, team=!3rd_dead]
