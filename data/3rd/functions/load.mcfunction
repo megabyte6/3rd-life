@@ -16,3 +16,4 @@ team add 3rd_third "1 life"
 team modify 3rd_third color red
 team add 3rd_dead "Dead"
 team modify 3rd_dead prefix [ "", {"text": "[DEAD] ","color": "gray"} ]
+team modify 3rd_dead color gray
