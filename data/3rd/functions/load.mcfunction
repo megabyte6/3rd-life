@@ -1,10 +1,11 @@
 # Set up worldborder unless it has already been set up.
 worldborder center 0 0
-execute unless data storage 3rd init run worldborder set 512
-execute unless data storage 3rd init run data modify storage 3rd init set value 1b
+execute unless data storage 3rd:init worldborder run worldborder set 512
+execute unless data storage 3rd:init worldborder run data modify storage 3rd:init worlderborder set value 1b
 
 # Add scoreboards
-scoreboard objectives add 3rd_death deathCount
+execute unless data storage 3rd:init deathCounter run scoreboard objectives add 3rd_death deathCount
+execute unless data storage 3rd:init deathCounter run data modify storage 3rd:init deathCounter set value 1b
 
 # Set up teams
 team add 3rd_first "3 lives"
