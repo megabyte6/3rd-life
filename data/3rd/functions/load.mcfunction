@@ -7,11 +7,11 @@ execute unless data storage 3rd init run data modify storage 3rd init set value 
 scoreboard objectives add 3rd_death deathCount
 
 # Set up teams
-team add 3rd_first
+team add 3rd_first "3 lives"
 team modify 3rd_first color green
-team add 3rd_second
+team add 3rd_second "2 lives"
 team modify 3rd_second color yellow
-team add 3rd_third
+team add 3rd_third "1 life"
 team modify 3rd_third color red
-team add 3rd_dead
-team modify 3rd_dead prefix [ "", {"text": "["}, {"text": "DEAD","color": "gray"}, {"text": "] "} ]
+team add 3rd_dead "Dead"
+team modify 3rd_dead prefix [ "", {"text": "[DEAD] ","color": "gray"} ]
