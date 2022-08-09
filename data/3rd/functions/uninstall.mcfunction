@@ -8,12 +8,14 @@ team remove 3rd_dead
 tellraw @a "4 teams removed"
 
 # Remove scoreboards
-scoreboard objectives remove 3rd_death
-tellraw @a "1 scoreboard removed"
+scoreboard objectives remove 3rd_deaths
+scoreboard objectives remove 3rd_kills
+tellraw @a "2 scoreboard removed"
 
 # Remove stored nbt data tags
 data remove storage 3rd:init worldborder
 data remove storage 3rd:init deathCounter
-tellraw @a "2 storage tag removed"
+data remove storage 3rd:boogeyman currentKills
+tellraw @a "3 storage tag removed"
 
 tellraw @a "You can now remove this datapack!"
