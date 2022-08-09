@@ -8,6 +8,7 @@ execute unless data storage 3rd:init deathCounter run scoreboard objectives add 
 execute unless data storage 3rd:init deathCounter run data modify storage 3rd:init deathCounter set value 1b
 
 execute unless data storage 3rd:init killCounter run scoreboard objectives add 3rd_kills playerKillCount "Kills"
+execute unless data storage 3rd:init killCounter run data modify storage 3rd:init killCounter set value 1b
 
 # Set up teams
 team add 3rd_first "3 lives"
