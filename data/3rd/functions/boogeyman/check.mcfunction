@@ -6,4 +6,5 @@ scoreboard players operation boogeymanKilled 3rd_main = @r[tag=3rd_boogeyman] 3r
 # Subtract old kill count from current kill count
 scoreboard players operation boogeymanKilled 3rd_main -= boogeymanCurrentKills 3rd_main
 
-execute as @r[tag=3rd_boogeyman] run execute if score boogeymanKilled 3rd_main matches ..1 run function 3rd:boogeyman/failed_to_kill
+execute as @r[tag=3rd_boogeyman] run execute if score boogeymanKilled 3rd_main matches 0 run function 3rd:boogeyman/failed_to_kill
+execute as @r[tag=3rd_boogeyman] run execute if score boogeymanKilled 3rd_main matches 1.. run function 3rd:boogeyman/successfully_killed
