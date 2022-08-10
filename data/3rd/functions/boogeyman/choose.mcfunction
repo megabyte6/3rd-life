@@ -6,4 +6,12 @@ tag @r add 3rd_boogeyman
 # Store the current number of player kills for the boogeyman.
 scoreboard players operation boogeymanCurrentKills 3rd_main = @r[tag=3rd_boogeyman] 3rd_kills
 
-# TODO #2 Show message telling boogeyman
+# Show message telling if you're the boogeyman
+schedule function 3rd:custom_title/3 0t replace
+schedule function 3rd:custom_title/2 20t replace
+schedule function 3rd:custom_title/1 40t replace
+
+schedule function 3rd:custom_title/you_are 60t replace
+
+schedule function 3rd:custom_title/the_boogeyman 160t replace
+schedule function 3rd:custom_title/not_the_boogeyman 160t replace
