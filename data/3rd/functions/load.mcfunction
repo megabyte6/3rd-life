@@ -4,8 +4,14 @@ worldborder set 512
 
 # Add scoreboards
 scoreboard objectives add 3rd_main dummy "3rd Main"
+scoreboard objectives add 3rd_constants dummy "3rd Constants"
 scoreboard objectives add 3rd_deaths deathCount "Deaths"
 scoreboard objectives add 3rd_kills playerKillCount "Kills"
+scoreboard objectives add time_left trigger
+
+# Set constants
+scoreboard players set seconds_in_a_minute 3rd_constants 60
+scoreboard players set boogeyman_timer_length 3rd_constants 7200
 
 # Set up teams
 team add 3rd_first "3 lives"

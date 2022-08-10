@@ -12,8 +12,10 @@ tellraw @a "4 teams removed"
 
 # Remove scoreboards
 scoreboard objectives remove 3rd_main
+scoreboard objectives remove 3rd_constants
 scoreboard objectives remove 3rd_deaths
 scoreboard objectives remove 3rd_kills
-tellraw @a "3 scoreboards removed"
+scoreboard objectives remove time_left
+tellraw @a "5 scoreboards removed"
 
 tellraw @a "You can now remove this datapack!"
