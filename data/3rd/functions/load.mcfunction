@@ -1,4 +1,4 @@
-# Set up worldborder unless it has already been set up.
+# Set up worldborder unless it has already been set up
 worldborder center 0 0
 execute unless data storage 3rd:init worldborder run worldborder set 512
 execute unless data storage 3rd:init worldborder run data modify storage 3rd:init worlderborder set value 1b
