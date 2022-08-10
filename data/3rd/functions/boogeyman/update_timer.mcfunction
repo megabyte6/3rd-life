@@ -1,4 +1,4 @@
-schedule function 3rd:update_timer 1s
+schedule function 3rd:boogeyman/update_timer 1s
 
 # Check if boogeyman killed a player every second in order to show "boogeyman cured" message
 function 3rd:boogeyman/check
