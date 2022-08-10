@@ -1,5 +1,3 @@
-# TODO #1 Add countdown when choosing boogeyman
-
 # Remove old tag from last boogeyman
 tag @a remove 3rd_boogeyman
 
