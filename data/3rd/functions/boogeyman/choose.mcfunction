@@ -4,4 +4,6 @@
 tag @r add 3rd_boogeyman
 
 # Store the current number of player kills for the boogeyman.
-execute as @r[tag=3rd_boogeyman] run scoreboard players operation boogeymanCurrentKills 3rd_main = @s 3rd_kills
+scoreboard players operation boogeymanCurrentKills 3rd_main = @r[tag=3rd_boogeyman] 3rd_kills
+
+# TODO #2 Show message telling boogeyman
