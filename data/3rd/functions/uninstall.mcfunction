@@ -1,6 +1,6 @@
 # Remove schedules
 schedule clear 3rd:tick
-schedule clear 3rd:boogeyman/update_timer
+schedule clear 3rd:second
 tellraw @a "2 schedules removed"
 
 # Remove teams

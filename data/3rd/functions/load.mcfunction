@@ -25,4 +25,4 @@ team modify 3rd_dead prefix [ "", {"text": "[DEAD] ","color": "gray"} ]
 team modify 3rd_dead color gray
 
 # Continue timer if boogeyman was already choosen
-function 3rd:boogeyman/update_timer
+function 3rd:second
