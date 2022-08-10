@@ -1,6 +1,6 @@
 # Remove schedules
 schedule clear 3rd:tick
-schedule clear 3rd:boogeyman/update_timer
+schedule clear 3rd:second
 tellraw @a "2 schedules removed"
 
 # Remove teams
@@ -12,15 +12,10 @@ tellraw @a "4 teams removed"
 
 # Remove scoreboards
 scoreboard objectives remove 3rd_main
+scoreboard objectives remove 3rd_constants
 scoreboard objectives remove 3rd_deaths
 scoreboard objectives remove 3rd_kills
-tellraw @a "3 scoreboards removed"
-
-# Remove stored nbt data tags
-data remove storage 3rd:init worldborder
-data remove storage 3rd:init mainScoreboard
-data remove storage 3rd:init deathCounter
-data remove storage 3rd:init killCounter
-tellraw @a "4 storage tags removed"
+scoreboard objectives remove time_left
+tellraw @a "5 scoreboards removed"
 
 tellraw @a "You can now remove this datapack!"

@@ -12,3 +12,6 @@ team join 3rd_third @a[scores={3rd_deaths=2}, team=!3rd_third]
 # Put player in spectator after their third death
 gamemode spectator @a[scores={3rd_deaths=3}, team=!3rd_dead]
 team join 3rd_dead @a[scores={3rd_deaths=3}, team=!3rd_dead]
+
+# Check trigger commands
+execute as @a[scores={time_left=1..}] run function 3rd:trigger/time_left
