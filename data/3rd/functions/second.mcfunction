@@ -1,6 +1,6 @@
 schedule function 3rd:second 1s
 
-# Check if boogeyman killed a player every second in order to show "boogeyman cured" message
+# Check if boogeyman killed a player in order to show the "boogeyman cured" message
 function 3rd:boogeyman/check
 
 # If time is up, check if the boogeyman failed to kill
