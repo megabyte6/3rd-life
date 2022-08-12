@@ -9,7 +9,7 @@ execute if score timer 3rd_main matches ..0 run execute if score boogeymanKilled
 # Show how long the boogeyman has left to kill
 execute if score boogeymanCured 3rd_main matches 0 run execute if score timer_minutes 3rd_main matches 10 run execute if score 10_minutes_left 3rd_title_shown matches 0 run function 3rd:custom_title/10_minutes_left
 execute if score boogeymanCured 3rd_main matches 0 run execute if score timer_minutes 3rd_main matches 5 run execute if score 5_minutes_left 3rd_title_shown matches 0 run function 3rd:custom_title/5_minutes_left
-execute if score boogeymanCured 3rd_main matches 0 run execute if score timer_minutes 3rd_main matches 1 run execute if score 1_minutes_left 3rd_title_shown matches 0 run function 3rd:custom_title/1_minute_left
+execute if score boogeymanCured 3rd_main matches 0 run execute if score timer_minutes 3rd_main matches 1 run execute if score 1_minute_left 3rd_title_shown matches 0 run function 3rd:custom_title/1_minute_left
 
 # Update timers
 scoreboard players remove timer 3rd_main 1
