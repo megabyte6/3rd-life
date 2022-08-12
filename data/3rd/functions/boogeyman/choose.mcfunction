@@ -8,11 +8,11 @@ tag @r add 3rd_boogeyman
 scoreboard players operation boogeymanCurrentKills 3rd_main = @a[tag=3rd_boogeyman] 3rd_kills
 
 # Show message telling if you're the boogeyman
-schedule function 3rd:custom_title/3 0t replace
-schedule function 3rd:custom_title/2 20t replace
-schedule function 3rd:custom_title/1 40t replace
+schedule function 3rd:custom_title/3 1t replace
+schedule function 3rd:custom_title/2 21t replace
+schedule function 3rd:custom_title/1 41t replace
 
-schedule function 3rd:custom_title/you_are 60t replace
+schedule function 3rd:custom_title/you_are 61t replace
 
-schedule function 3rd:custom_title/the_boogeyman 160t replace
-schedule function 3rd:custom_title/not_the_boogeyman 160t replace
+schedule function 3rd:custom_title/the_boogeyman 161t replace
+schedule function 3rd:custom_title/not_the_boogeyman 161t replace
