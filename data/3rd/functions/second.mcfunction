@@ -12,7 +12,7 @@ execute if score boogeymanCured 3rd_main matches 0 run execute if score timer_mi
 execute if score boogeymanCured 3rd_main matches 0 run execute if score timer_minutes 3rd_main matches 1 run execute if score 1_minute_left 3rd_title_shown matches 0 run function 3rd:custom_title/1_minute_left
 
 # Update timers
-scoreboard players remove timer 3rd_main 1
+execute unless score timer 3rd_main matches ..-1 run scoreboard players remove timer 3rd_main 1
 
 scoreboard players operation timer_minutes 3rd_main = timer 3rd_main
 scoreboard players operation timer_minutes 3rd_main /= seconds_in_a_minute 3rd_constants
