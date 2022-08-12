@@ -3,6 +3,9 @@ schedule clear 3rd:tick
 schedule clear 3rd:second
 tellraw @a "2 schedules removed"
 
+# Reset worldborder
+worldborder set 59999968
+
 # Remove teams
 team remove 3rd_first
 team remove 3rd_second
@@ -19,6 +22,6 @@ scoreboard objectives remove 3rd_kills
 scoreboard objectives remove 3rd_get_life
 scoreboard objectives remove give_life
 scoreboard objectives remove time_left
-tellraw @a "7 scoreboards removed"
+tellraw @a "8 scoreboards removed"
 
 tellraw @a "You can now remove this datapack!"
