@@ -13,6 +13,7 @@ tellraw @a "4 teams removed"
 # Remove scoreboards
 scoreboard objectives remove 3rd_main
 scoreboard objectives remove 3rd_constants
+scoreboard objectives remove 3rd_title_shown
 scoreboard objectives remove 3rd_deaths
 scoreboard objectives remove 3rd_kills
 scoreboard objectives remove 3rd_get_life
