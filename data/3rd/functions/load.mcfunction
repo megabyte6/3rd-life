@@ -11,6 +11,14 @@ scoreboard objectives add 3rd_get_life minecraft.used:minecraft.warped_fungus_on
 scoreboard objectives add give_life trigger
 scoreboard objectives add time_left trigger
 
+# Initialize 3rd_main values
+scoreboard players set gameStarted 3rd_main 0
+scoreboard players set timer 3rd_main 0
+scoreboard players set timer_minutes 3rd_main 0
+scoreboard players set boogeymanKilled 3rd_main 0
+scoreboard players set boogeymanCurrentKills 3rd_main 0
+scoreboard players set boogeymanCured 3rd_main 0
+
 # Set constants
 scoreboard players set seconds_in_a_minute 3rd_constants 60
 scoreboard players set boogeyman_timer_length 3rd_constants 7200
