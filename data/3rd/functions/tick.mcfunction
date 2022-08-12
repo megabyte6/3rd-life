@@ -14,7 +14,7 @@ gamemode spectator @a[scores={3rd_deaths=3}, team=!3rd_dead]
 team join 3rd_dead @a[scores={3rd_deaths=3}, team=!3rd_dead]
 
 # Check trigger commands
-execute as @a[scores={give_life=1..}] run function 3rd:trigger/give_life
+execute as @a[scores={give_life=1..}] run execute unless score @s 3rd_deaths matches 2.. run function 3rd:trigger/give_life
 execute as @a[scores={time_left=1..}] run function 3rd:trigger/time_left
 
 execute as @a[scores={3rd_get_life=1..}, nbt={SelectedItem:{tag:{3rd_life:1b}}}] run function 3rd:trigger/get_life
