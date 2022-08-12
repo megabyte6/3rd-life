@@ -4,7 +4,7 @@ schedule function 3rd:second 1s
 function 3rd:boogeyman/check
 
 # If time is up, check if the boogeyman failed to kill
-execute if score gameStarted 3rd_main matches 1 run execute if score timer 3rd_main matches ..0 run execute if score boogeymanKilled 3rd_main matches 0 run execute as @a[tag=3rd_boogeyman] run function 3rd:boogeyman/failed_to_kill
+execute if score gameStarted 3rd_main matches 1 run execute if score timer 3rd_main matches 0 run execute if score boogeymanKilled 3rd_main matches 0 run execute as @a[tag=3rd_boogeyman] run function 3rd:boogeyman/failed_to_kill
 
 # Show how long the boogeyman has left to kill
 execute if score boogeymanCured 3rd_main matches 0 run execute if score timer_minutes 3rd_main matches 10 run execute if score 10_minutes_left 3rd_title_shown matches 0 run function 3rd:custom_title/10_minutes_left
