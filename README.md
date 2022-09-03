@@ -1,5 +1,4 @@
 # 3rd Life
----
 ## What is it?
 3rd Life is a Minecraft datapack implementing the ideas of YouTuber Grian's 3rd Life series. With a few tweaks from StormShadows and ImmortalFire927 of course. ;)
 ---
