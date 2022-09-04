@@ -11,7 +11,7 @@
 
 ## Options
 - All players:
-    - `/trigger give_life` will put one of your lives into an item that you can give to others to help them. (It's recommended you use the corresponding [resource pack](https://github.com/megabyte6/3rd-life-resourcepack))
+    - `/trigger give_life` will put one of your lives into an item that you can give to others to help them. (It's recommended you use the corresponding [resource pack](https://github.com/megabyte6/3rd-life-resource-pack))
     - `/trigger time_left` to see how much time is left on the timer in minutes.
 - Server admins:
     - `/function 3rd:start` to start game after everyone has joined the server.
